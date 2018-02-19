@@ -35,7 +35,7 @@
 			        <a class="nav-link smooth-link" href="#features">About Me</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link smooth-link" href="#skillsets">Technical Skillsets</a>
+			        <a class="nav-link smooth-link" href="#skillsets">Skillsets</a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link smooth-link" href="#blog">Blogs</a>
@@ -67,6 +67,12 @@
 					</a>
 					<a href="https://twitter.com/santoshkpradhan" target="_blank" style="color: white; font-size: 20px; margin: 5px;">
 						<i class="ion-social-twitter"></i>
+					</a>
+					<a href="https://github.com/santoshkpradhan" target="_blank" style="color: white; font-size: 20px; margin: 5px;">
+						<i class="ion-social-github"></i>
+					</a>
+					<a href="https://salesforce.stackexchange.com/users/4758/san-tosh" target="_blank" style="color: white; font-size: 20px; margin: 5px;">
+						<i class="ion-android-cloud-outline"></i>
 					</a>
 				</div>
 			</div>
@@ -171,30 +177,60 @@
 
 		<section class="bg-overlay padding" id="skillsets" data-bg="img/projects.jpeg">
 			<div class="container">
-				<div class="row align-items-center">
+				<div class="row"  style="color: white;">
 					<div class="col-12 col-md-6">
-						<figure class="projects-picture">
-							<img src="img/youzhang.png" alt="Youzhang">
-						</figure>
+							<small><h5 style="border-bottom: 1px solid;">Professional Skills</h5></small>
+							<small class="marg-top">Communication</small> 
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+									<span class="sr-only">60% Complete</span>
+								</div>
+							</div>
+							<small class="marg-top">Leadership</small> 
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+									<span class="sr-only">60% Complete</span>
+								</div>
+							</div>
+							<small class="marg-top">Confidence</small> 
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+									<span class="sr-only">60% Complete</span>
+								</div>
+							</div>
 					</div>
 					<div class="col-12 col-md-6">
-						<div class="projects-details">
-							<div class="projects-badge">
-								COMING SOON...
+							<small><h5 style="border-bottom: 1px solid;">Technical Skills</h5></small>
+							<small class="marg-top">Salesforce</small> 
+							<div class="progress green">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+									<span class="sr-only">60% Complete</span>
+								</div>
 							</div>
-							<!-- <h2 class="projects-title">Youzhang - Ionic 3 Catalogue Template</h2>
-							<p class="projects-description">
-								Youzhang is an iconic template catalog 3. This ionic template uses version 3 and uses the latest feature of ionic v3 that is Lazy Loading. With Ionic version 3 and Lazy Loading you don’t have to define all the components in the app.module.ts file and your hybrid app will get more native and it will make the app performance better.
-							</p>
-							<div class="projects-cta">
-								<a href="https://codecanyon.net/item/youzhang-ionic-3-catalogue-template/20466954?ref=frameborder" class="btn btn-primary" target="_blank">
-									Buy Now
-								</a>
-								<a href="https://codecanyon.net/user/frameborder?ref=frameborder" class="btn btn-link" target="_blank">
-									More Products
-								</a>
-							</div> -->
-						</div>
+							<small class="marg-top">Integration</small> 
+							<div class="progress green">
+								<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+									<span class="sr-only">60% Complete</span>
+								</div>
+							</div>
+							<small class="marg-top">Heroku</small> 
+							<div class="progress green">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+									<span class="sr-only">60% Complete</span>
+								</div>
+							</div>
+							<small class="marg-top">HTML/CSS</small> 
+							<div class="progress green">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+									<span class="sr-only">60% Complete</span>
+								</div>
+							</div>
+							<small class="marg-top">Javascript</small> 
+							<div class="progress green">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+									<span class="sr-only">60% Complete</span>
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -286,21 +322,24 @@
 							<!-- <iframe src="https://snazzymaps.com/embed/10159" style="border:none;" class="maps"></iframe> -->
 						</div>
 						<div class="col-12 col-md-7">
-							<form class="contact row" id="contact-form">
+							<form class="contact row" id="contact-form"
+								action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+								<input type=hidden name="orgid" value="00D280000016k8A">
+								<input type=hidden name="retURL" value="https://www.santoshpradhan.com">
 								<div class="form-group col-6">
-									<input type="text" class="form-control" placeholder="Name" name="name" required="">
+									<input type="text" id="00N28000007nOLu" maxlength="12" name="00N28000007nOLu" class="form-control" placeholder="Name" required="">
 								</div>
 								<div class="form-group col-6">
-									<input type="email" class="form-control" placeholder="Email" name="email" required="">
+									<input type="email" id="email" maxlength="80" name="email" class="form-control" placeholder="Email" required="">
 								</div>
 								<div class="form-group col-12">
-									<input type="text" class="form-control" placeholder="Subject" name="subject" required="">
+									<input type="text" id="subject" maxlength="80" name="subject" class="form-control" placeholder="Subject" required="">
 								</div>
 								<div class="form-group col-12">
-									<textarea class="form-control" placeholder="Message" name="message" required=""></textarea>
+									<textarea class="form-control" name="description" placeholder="Message" required=""></textarea>
 								</div>
 								<div class="form-group col-12 mt-2">
-									<button class="btn btn-primary">
+									<button class="btn btn-primary" type="submit">
 										Send Message
 									</button>
 								</div>

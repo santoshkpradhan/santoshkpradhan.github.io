@@ -268,6 +268,7 @@ if (!('webkitSpeechRecognition' in window)) {
       range.selectNode(document.getElementById('final_span'));
       window.getSelection().addRange(range);
     }
+    setTimeout(function(){startButton()}, 5000);
     if (create_email) {
       create_email = false;
       createEmail();
@@ -347,7 +348,7 @@ function startButton(event) {
   start_img.src = 'mic-slash.gif';
   showInfo('info_allow');
   showButtons('none');
-  start_timestamp = event.timeStamp;
+  start_timestamp = Date.now();
 }
 function showInfo(s) {
   if (s) {

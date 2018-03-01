@@ -274,54 +274,6 @@ if (!('webkitSpeechRecognition' in window)) {
       createEmail();
     }
   };
-  recognition.onsoundend = function() {
-    console.log('sound end');
-    recognizing = false;
-    if (ignore_onend) {
-      return;
-    }
-    start_img.src = 'mic.gif';
-    if (!final_transcript) {
-      showInfo('info_start');
-      return;
-    }
-    showInfo('');
-    if (window.getSelection) {
-      window.getSelection().removeAllRanges();
-      var range = document.createRange();
-      range.selectNode(document.getElementById('final_span'));
-      window.getSelection().addRange(range);
-    }
-    setTimeout(function(){startButton()}, 5000);
-    if (create_email) {
-      create_email = false;
-      createEmail();
-    }
-  };
-  recognition.onspeechend = function() {
-    console.log('speech end');
-    recognizing = false;
-    if (ignore_onend) {
-      return;
-    }
-    start_img.src = 'mic.gif';
-    if (!final_transcript) {
-      showInfo('info_start');
-      return;
-    }
-    showInfo('');
-    if (window.getSelection) {
-      window.getSelection().removeAllRanges();
-      var range = document.createRange();
-      range.selectNode(document.getElementById('final_span'));
-      window.getSelection().addRange(range);
-    }
-    setTimeout(function(){startButton()}, 5000);
-    if (create_email) {
-      create_email = false;
-      createEmail();
-    }
-  };
   recognition.onresult = function(event) {
     var interim_transcript = '';
     for (var i = event.resultIndex; i < event.results.length; ++i) {

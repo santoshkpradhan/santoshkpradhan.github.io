@@ -1,6 +1,7 @@
 /*reset*/
 html, body {
 	height: 100% !important;
+	font-family: 'Roboto';
 }
 
 .main-loading {

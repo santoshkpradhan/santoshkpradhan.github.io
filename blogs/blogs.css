@@ -16,6 +16,15 @@
 .blog-img-container .blog-logo:hover {
     transform: scale(1.2);
 }
+keyword {
+    color: #191919;
+    font-size: 90%;
+    background: #eee;
+}
+a.li-href {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* per blog styles */
 .blog-img-container.sf-authentication{

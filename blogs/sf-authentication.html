@@ -17,6 +17,8 @@
 	</head> 
 
 	<body>
+			<div id="fb-root"></div>
+			<script src="../js/facebookComments.js"></script>
 		<div id="header-nav"></div>
 
 		<section class="padding bg-grey" id="blog">
@@ -31,7 +33,31 @@
 							<article class="card">
 							  <div class="card-body">
 								<div class="card-subtitle mb-2 text-muted">by <a href="#">Santosh Pradhan</a> on August 24, 2017</div>
-							    <p class="card-text">Einstein Vision has been one of the cool topics recently. Why!?</p>
+							    <p class="card-text">
+										Anytime you need to integrate to Salesforce, you need to authenticate yourself first. There are options however 
+										to build public APIs (e.g., using Public Sites as an end-point). But you still need to set-up authentication
+										for your <keyword>Guest site user</keyword>.
+									</p>
+									<p class="card-text">
+										In this chapter, we would discuss and work on following ways of authenticating a user
+									</p>
+									<ul class="card-text">
+											<li><a class="li-href" href="#basic-auth">Basic Authentication</a></li>
+											<li><a class="li-href" href="#oauth-2">OAuth 2.0</a></li>
+											<li><a class="li-href" href="#soap-login">SOAP Login</a></li>
+											<li><a class="li-href" href="#openid-connect">OpenID Connect</a></li>
+									</ul>
+									<p id="basic-auth" class="card-text">
+										<h4>Basic Authentication</h4>
+										<p>
+											It is one of the simplest way to authenticate a User. A basic authentication just needs
+											<ul>
+													<li>username</li>
+													<li>password</li>
+											</ul>
+											But unfortunately Salesforce does not support 
+										</p>
+									</p>
 							    </div>
 						    </div>
 						  </article>
@@ -39,6 +65,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="fb-comments" data-href="https://www.santoshpradhan.com/blogs/sf-authentication" data-width="100%" data-numposts="5"></div>
 		</section>
 
 		<footer>

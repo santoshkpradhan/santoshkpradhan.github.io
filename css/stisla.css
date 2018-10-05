@@ -470,7 +470,7 @@ article.card .card-title a {
 article.card .card-title a:hover {
 	opacity: .8;
 }
-article.card h1.card-title{
+h1.card-title{
 	font-size: 2em;
 	text-transform: uppercase;
         word-spacing: 0.2em;

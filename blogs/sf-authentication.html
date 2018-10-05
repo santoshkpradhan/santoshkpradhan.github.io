@@ -17,26 +17,7 @@
 	</head> 
 
 	<body>
-		<nav class="navbar navbar-expand-lg main-navbar">
-			<div class="container-fluid">			
-			  <!-- <a class="navbar-brand" href="#">
-			  	<img src="img/logo-light.png" alt="Logo">
-			  </a> -->
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon">
-			    	<i class="ion-navicon"></i>
-			    </span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNav">
-				  <div class="mr-auto"></div>
-			    <ul class="navbar-nav">
-			      <li class="nav-item active">
-			        <a class="nav-link smooth-link" href="http://www.santoshpradhan.com">Home</a>
-			      </li>
-			    </ul>
-			  </div>
-		  </div>
-		</nav>
+		<div id="header-nav"></div>
 
 		<section class="padding bg-grey" id="blog">
 			<div class="container">
@@ -44,8 +25,10 @@
 					<div class="row col-spacing">
 						<div class="col-12 col-md-12 col-lg-12">
 							<h1 class="card-title">Salesforce Authentication Mechanisms</h1>
+							<div class="blog-img-container sf-authentication">
+								<span class="blog-logo sf-authentication"></span>
+							</div>
 							<article class="card">
-							  <div class="blog-img sf-authenticate" />
 							  <div class="card-body">
 								<div class="card-subtitle mb-2 text-muted">by <a href="#">Santosh Pradhan</a> on August 24, 2017</div>
 							    <p class="card-text">Einstein Vision has been one of the cool topics recently. Why!?</p>
@@ -78,6 +61,7 @@
 		<script src="../sweetalert/dist/sweetalert.min.js"></script>
 		<script src="../js/stisla.js"></script>
 		<script src="../js/scrollrvl.js"></script>
+		<script src="../js/includeHeader.js"></script>
 		<script type="../text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 	</body>
 </html>

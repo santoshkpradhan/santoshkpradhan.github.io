@@ -1,9 +1,26 @@
-.blog-img {
+.blog-img-container {
     height: 172px;
+    opacity: 0.8;
 }
-.blog-img:hover {
+.blog-img-container:hover {
+    opacity: 1;
+}
+.blog-img-container .blog-logo
+{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    margin: 26px 40px;
+    background-size: contain !important;
+}
+.blog-img-container .blog-logo:hover {
     transform: scale(1.2);
 }
-.blog-img.sf-authentication {
-    background: url('images/sf-authentication.png');
+
+/* per blog styles */
+.blog-img-container.sf-authentication{
+    background: bisque;
+}
+.blog-logo.sf-authentication {
+    background: url('https://developer.salesforce.com/resource/images/trailhead/badges/superbadges/trailhead_superbadge_security.png');
 }

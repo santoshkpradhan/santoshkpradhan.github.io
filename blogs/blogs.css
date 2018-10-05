@@ -1,0 +1,9 @@
+.blog-img {
+    height: 172px;
+}
+.blog-img:hover {
+    transform: scale(1.2);
+}
+.blog-img.sf-authentication {
+    background: url('images/sf-authentication.png');
+}

@@ -21,6 +21,14 @@ keyword {
     font-size: 90%;
     background: #eee;
 }
+subhead {
+    text-decoration: underline;
+    color: #191919;
+    text-underline-position: under;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
 a.li-href {
     text-decoration: none;
     color: inherit;

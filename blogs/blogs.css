@@ -38,6 +38,12 @@ a.li-href {
 .blog-img-container.sf-authentication{
     background: bisque;
 }
+.blog-img-container.dx-getstarted{
+    background: #FF0DFF;
+}
 .blog-logo.sf-authentication {
     background: url('https://developer.salesforce.com/resource/images/trailhead/badges/superbadges/trailhead_superbadge_security.png');
+}
+.blog-logo.dx-getstarted {
+    background: url('https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/sfdx_dev_model/fb4a5d97ab961f3df3e4d7a7217b24aa_badge.png')
 }

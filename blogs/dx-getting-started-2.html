@@ -28,8 +28,8 @@
 				<div class="row col-spacing">
 					<div class="col-12 col-md-12 col-lg-12">
 						<h1 class="card-title">Salesforce DX - Getting Started [Part 1]</h1>
-						<div class="blog-img-container sf-authentication">
-							<span class="blog-logo sf-authentication"></span>
+						<div class="blog-img-container dx-getstarted">
+							<span class="blog-logo dx-getstarted"></span>
 						</div>
 						<article class="card">
 							<div class="card-body">
@@ -46,43 +46,22 @@
 									This can be divided into following steps:
 								</p>
 								<ul class="card-text">
-									<li><a class="li-href" href="#creat-project">Creating your Project</a></li>
+									<li><a class="li-href" href="#create-project">Creating your Project</a></li>
 									<li><a class="li-href" href="#auth-org">Authenticating your Org</a></li>
 								</ul>
-								<p id="creat-project" class="card-text">
-									<h4>OAuth 2.0</h4>
-									<p class="card-text">Basic authentication is one of the most simplest ways to set-up login for a User. It takes
-										just the username and password to get the access token.<br/> But unfortunately, Salesforce does not support basic
-										authentication. So, you have to go for OAuth 2.0 way.<br/>
-										<subhead>what is OAuth 2.0 and how it works?</subhead>
+								<p id="create-project" class="card-text">
+									<h4>Create Project</h4>
+									<p class="card-text">Open VS Code, and open the console in VS Code. To open the console you could use hotkey 
+										<keyword>ctrl + ~</keyword>. In the console, you type the following command to create your project <br/>
+										<keyword>sfdx force:project:create --projectname dx-getting-started</keyword>.
+										Then you see following set of files created
+										<pre>target dir = /Users/santoshpradhan/Desktop/GlobalDrive/Development/dx/dx-getting-started
+   create dx-getting-started/sfdx-project.json
+   create dx-getting-started/README.md
+   create dx-getting-started/.forceignore
+   create dx-getting-started/config/project-scratch-def.json</pre>
 									</p>
-									<p class="card-text">To begin at a high level, OAuth is not an API or a service: it is an open standard for authorization
-										and any developer can implement it.</p>
-									<p class="card-text">OAuth is a standard that applications (and the developers who love them) can use to provide
-										client applications with “secure delegated access”. OAuth works over HTTP and authorizes Devices, APIs, Servers
-										and Applications with access tokens rather than credentials</p>
-									<p class="card-text">There are two versions of OAuth: OAuth 1.0a and OAuth2. These specifications are completely
-										different from one another, and cannot be used together: there is no backwards compatibility between them.</p>
-									<p class="card-text">Which one is more popular? Great question! Nowadays (at this time of writing), OAuth2 is no
-										doubt the most widely used form of OAuth.</p>
-									<subhead>OAuth Authentication Flows:</subhead>
-									<p class="card-text">An OAuth authentication flow defines a series of steps used to coordinate the authentication
-										process between your application and Salesforce. Supported OAuth flows include:</p>
-									<ul class="card-text">
-										<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_web_server_oauth_flow.htm"
-											 target="_blank">Web server flow</a>, where the server can securely protect the consumer secret.</li>
-										<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_user_agent_oauth_flow.htm"
-											 target="_blank">User-agent flow</a>, used by applications that cannot securely store the consumer secret.</li>
-										<li><a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm"
-											 target="_blank">Username-password flow</a>, where the application has direct access to user credentials.</li>
-									</ul>
-									<p class="card-text">A snippet below to authenticate(Username-password flow) to Production Salesforce System. for
-										sandboxes use
-										<keyword>'test.salesforce.com'</keyword> instead of
-										<keyword>'login.salesforce.com'</keyword>. But before that you need to setup ClientID and Client Secret that is used for
-										authorization part. you could know how to create a connected
-										<a href="https://help.salesforce.com/articleView?id=connected_app_create.htm&type=5" target="_blank">here</a>
-									</p>
+									
 									<script src="https://gist.github.com/santoshkpradhan/41649328dcfd0fe7650c137be4b11284.js"></script>
 								</p>
 

@@ -71,20 +71,26 @@
 										<div><img src="../images/dx-getting-started-2-1.png" height="120" alt="sfdx-project.json"/></div>
 									</p>
 									<p class="card-text">
-										To support Legacy Systems that work on SOAP or where the SOAP works better than REST. For example, if you are building a
-										partner application for Salesforce. It also does not need you to create a connected app. For example;<br/>										-
-										Data Loader (which handles bulk data) - A Contract based transaction (where, request and response formats are fixed)<br/><br/>										I
-										believe REST is the way to go, but the best approach is completely based on the scenario you are handling.
+										If you want to connect to a Production or Developer Edition Org, you could use <keyword>sfdcLoginUrl</keyword>
+										as <keyword>login.salesforce.com</keyword>. If you want to connect to Sandbox org, you could set the Url as 
+										<keyword>test.salesforce.com</keyword>.<br/>
+										Now your settings are done. You are good to go ahead with authentication.
 									</p>
-									<p class="card-text">Following is a sample snippet to log into Salesforce using SOAP:</p>
-									<script src="https://gist.github.com/santoshkpradhan/158f93da0b942289944059409f754d7d.js"></script>
+									<p class="card-text">To open the authentication window, run the following command in the console of VS Code.</p>
+									<pre>sfdx force:auth:web:login</pre><br/>
+									Then the login screen opens and once you enter the credentials, on successful login, comeback to your VS Code window.
+									You can see a message in the console something like this:
+									<pre>Successfully authorized pradhan.santosh@***.com with org ID 00D**********. You may now close the browser</pre><br/>
+									<subhead>How to get all changes in your org to your local?</subhead>
+									<p class="card-text">Okay! Now the bitter truth. As per currennt release, you can not directly run a push or 
+										pull command on Salesforce DX. You need to use <keyword>sfdx force:mdapi:retrieve</keyword> or 
+										<keyword>sfdx force:mdapi:deploy</keyword> to work with non-scratch orgs.</p>
+									<p class="card-text">Following are set of commands to extract what you need from your Org.</p>
 								</p>
 
 								<p class="card-text"><strong>References:</strong><br/>
-									<a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm"
-									 target="_blank">Understanding Authentication</a><br/>
-									<a href="https://stormpath.com/blog/what-the-heck-is-oauth" target="_blank">What the heck is OAuth</a><br/>
-									<a href="https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_quickstart_login.htm" target="_blank">Login using SOAP</a>
+									<a href="https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev"
+									 target="_blank">DX Developer Guide</a>
 								</p>
 							</div>
 						</article>

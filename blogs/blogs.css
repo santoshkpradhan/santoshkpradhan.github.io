@@ -1,0 +1,49 @@
+.blog-img-container {
+    height: 172px;
+    opacity: 0.8;
+}
+.blog-img-container:hover {
+    opacity: 1;
+}
+.blog-img-container .blog-logo
+{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    margin: 26px 40px;
+    background-size: contain !important;
+}
+.blog-img-container .blog-logo:hover {
+    transform: scale(1.2);
+}
+keyword {
+    color: #191919;
+    font-size: 90%;
+    background: #eee;
+}
+subhead {
+    text-decoration: underline;
+    color: #191919;
+    text-underline-position: under;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+a.li-href {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* per blog styles */
+.blog-img-container.sf-authentication{
+    background: bisque;
+}
+.blog-img-container.dx-getstarted{
+    background: #FF0DFF;
+}
+.blog-logo.sf-authentication {
+    background: url('https://developer.salesforce.com/resource/images/trailhead/badges/superbadges/trailhead_superbadge_security.png');
+}
+.blog-logo.dx-getstarted {
+    background: url('https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/sfdx_dev_model/fb4a5d97ab961f3df3e4d7a7217b24aa_badge.png')
+}
